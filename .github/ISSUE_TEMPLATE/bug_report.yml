@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a problem with Anchr
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. For **security vulnerabilities**, do not file here —
+        see [SECURITY.md](https://github.com/vivartanenterprises/Anchr/blob/main/SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: Anchr version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: AI agent in use
+      placeholder: e.g. Claude Code, Cursor, Copilot, Cline
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Paste any STOP_REASON, panel output, or the Anchr diagnostics channel. Redact secrets.
+      render: shell
