@@ -53,7 +53,7 @@ action gating, and signal-flood protection).
 - **Python 3.10+** on your PATH (`python`/`py` on Windows, `python3`/`python` on macOS/Linux).
 - A **Git repository** — the daemon refuses to run outside one.
 
-## Privacy
+## Privacy  
 
 Anchr's standard mode runs **entirely locally** and collects **no telemetry**. The daemon,
 the protocol checks, and the panel never contact a server. Outbound network calls happen
