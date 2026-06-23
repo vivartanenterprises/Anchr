@@ -35,7 +35,7 @@ clears the lock. The agent cannot rationalize past it.
 
 ## What it catches
 
-A drift is caught **mechanically**, not by another model's judgment. Examples:
+A drift is caught **mechanically**, not by another model's judgment. Examples :
 
 - **Scope creep** — the agent changed a file it never declared.
 - **False completion** — "done" without a passing test run.
